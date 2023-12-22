@@ -16,7 +16,7 @@ export const Spin = (props: SVGProps<SVGSVGElement>) => {
         cy="12"
         r="10"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth="4"
       />
       <path
         fill="currentColor"

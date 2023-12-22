@@ -26,9 +26,9 @@ export const Uploader = ({
           el.onchange = async (e: any) => {
             const file = e.target.files[0] as File;
             const formData = new FormData();
-            formData.append("file", file);
+            formData.append("file", file);            
             await onUpload(formData);
-            document.body.removeChild(el);
+            // document.body.removeChild(el);
           };
           el.oncancel = () => {
             document.body.removeChild(el);

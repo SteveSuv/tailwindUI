@@ -126,7 +126,14 @@ export const App = () => {
       </Row>
 
       <Title>Uploader</Title>
-      <Uploader onUpload={async () => {}}>
+      <Uploader
+        onUpload={async (formData: FormData) => {
+          const file = formData.get("file") as File;
+          alert(
+            `name: ${file.name}\nsize: ${(file.size / 1024).toFixed(2)} KB`,
+          );
+        }}
+      >
         <Button>upload</Button>
       </Uploader>
 

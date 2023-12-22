@@ -19,8 +19,8 @@ https://tailwindcss.com/docs/installation/framework-guides
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    ...// add this line
-    "./node_modules/@onekstar/tailwind-ui/index.js",
+    ...
+    "./node_modules/@onekstar/tailwind-ui/index.js", // add this line
   ],
   theme: {
     extend: {},
