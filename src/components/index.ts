@@ -7,7 +7,6 @@ export { Card } from "./basic/Card";
 export { ColDivider } from "./basic/ColDivider";
 export { Empty } from "./basic/Empty";
 export { IconButton } from "./basic/IconButton";
-// export { List } from "./basic/List";
 export { ListItem } from "./basic/ListItem";
 export { RowDivider } from "./basic/RowDivider";
 export { Spin } from "./basic/Spin";
@@ -31,7 +30,6 @@ export { Row } from "./layout/Row";
 // overlay
 export { ClickPopover } from "./overlay/ClickPopover";
 export { Drawer } from "./overlay/Drawer";
-// export { Dropdown } from "./overlay/Dropdown";
 export { HoverPopover } from "./overlay/HoverPopover";
 export { Modal } from "./overlay/Modal";
 export { Overlay } from "./overlay/Overlay";
