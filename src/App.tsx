@@ -11,13 +11,11 @@ import {
   Col,
   ColDivider,
   Drawer,
-  // Dropdown,
   Empty,
   Grid,
   HoverPopover,
   IconButton,
   Input,
-  // List,
   ListItem,
   Modal,
   Overlay,
@@ -33,6 +31,7 @@ import {
   Title,
   Tooltip,
   Uploader,
+  TabItem,
 } from "./components";
 import { User } from "lucide-react";
 
@@ -41,6 +40,7 @@ export const App = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [drawerVisible, setDrawerVisible] = useState(false);
   const [OverlayVisible, setOverlayVisible] = useState(false);
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <Center className="gap-12 bg-white p-8">
@@ -103,12 +103,26 @@ export const App = () => {
       <Spin />
 
       <Title>Tabs</Title>
-      <Tabs />
+      <Tabs>
+        {["Tab1", "Tab2", "Tab3"].map((item, index) => {
+          return (
+            <TabItem
+              key={index}
+              active={index === activeTab}
+              onClick={() => {
+                setActiveTab(index);
+              }}
+            >
+              {item}
+            </TabItem>
+          );
+        })}
+      </Tabs>
 
       <Title>Tag</Title>
       <Row className="gap-4">
-        <Tag>tag</Tag>
-        <Tag active>tag</Tag>
+        <Tag>Tag</Tag>
+        <Tag active>Tag</Tag>
       </Row>
 
       <Title>Uploader</Title>
@@ -172,7 +186,13 @@ export const App = () => {
         render={(tp) => (
           <Card className="p-2 shadow-sm">
             <Center className="h-40 w-40">
-              <Button onClick={() => tp.hide()}>close</Button>
+              <Button
+                onClick={() => {
+                  tp.hide();
+                }}
+              >
+                close
+              </Button>
             </Center>
           </Card>
         )}
@@ -185,7 +205,13 @@ export const App = () => {
         render={(tp) => (
           <Card className="p-2 shadow-sm">
             <Center className="h-40 w-40">
-              <Button onClick={() => tp.hide()}>close</Button>
+              <Button
+                onClick={() => {
+                  tp.hide();
+                }}
+              >
+                close
+              </Button>
             </Center>
           </Card>
         )}

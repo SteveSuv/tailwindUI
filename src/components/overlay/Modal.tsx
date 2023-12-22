@@ -50,7 +50,7 @@ export const Modal = (props: {
                 className="max-h-[90vh] overflow-scroll rounded-xl p-0 shadow-sm"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div ref={ref}>{children}</div>
+                <div>{children}</div>
               </Card>
             </motion.div>
           </motion.div>

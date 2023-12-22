@@ -11,6 +11,7 @@ export { ListItem } from "./basic/ListItem";
 export { RowDivider } from "./basic/RowDivider";
 export { Spin } from "./basic/Spin";
 export { Tabs } from "./basic/Tabs";
+export { TabItem } from "./basic/TabItem";
 export { Tag } from "./basic/Tag";
 export { Uploader } from "./basic/Uploader";
 
