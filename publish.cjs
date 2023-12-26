@@ -26,6 +26,7 @@ const newVersion = addVersion(pkg.version);
 const info = {
   name: pkg.name,
   version: newVersion,
+  type: pkg.type,
   private: false,
   description: pkg.description,
   main: "./index.js",
