@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@tippyjs/react": "^4.2.6",
+    "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.299.0",
@@ -31,7 +32,6 @@
     "tippy.js": "^6.3.7"
   },
   "devDependencies": {
-    "tsup": "^8.0.1",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "@vitejs/plugin-react": "^4.2.1",
@@ -40,6 +40,7 @@
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.4.0",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
   }
